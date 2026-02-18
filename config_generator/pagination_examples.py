@@ -7,7 +7,7 @@ instead of following fragile rules.
 
 import json
 
-from mini_scraper.config_generator.utils import ensure_dict
+from config_generator.utils import ensure_dict
 
 PAGINATION_EXAMPLES: list[dict] = [
     # ── SSR: query parameter (?page=N) ──────────────────────────────

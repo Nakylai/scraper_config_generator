@@ -4,7 +4,7 @@ import logging
 import chromadb
 from sentence_transformers import SentenceTransformer
 
-from mini_scraper.config_generator.schemas import LLMFeatures, SimilarConfig
+from config_generator.schemas import LLMFeatures, SimilarConfig
 
 logger = logging.getLogger(__name__)
 

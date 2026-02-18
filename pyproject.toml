@@ -1,0 +1,19 @@
+[project]
+name = "scraper-config-generator"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.0",
+    "pydantic>=2.0",
+    "beautifulsoup4>=4.12",
+    "chromadb>=0.4",
+    "sentence-transformers>=2.0",
+    "crawl4ai==0.7.6",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["config_generator"]

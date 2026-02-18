@@ -4,13 +4,13 @@ import re
 
 from bs4 import BeautifulSoup
 
-from mini_scraper.config_generator.llm_client import LLMClient
-from mini_scraper.config_generator.prompts import (
+from config_generator.llm_client import LLMClient
+from config_generator.prompts import (
     INFERENCE_FEATURE_PROMPT,
     TRAINING_FEATURE_PROMPT,
 )
-from mini_scraper.config_generator.schemas import LLMFeatures
-from mini_scraper.config_generator.utils import clean_html, ensure_dict, parse_json_response
+from config_generator.schemas import LLMFeatures
+from config_generator.utils import clean_html, ensure_dict, parse_json_response
 
 logger = logging.getLogger(__name__)
 

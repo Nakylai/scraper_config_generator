@@ -3,19 +3,19 @@ import logging
 
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CacheMode, CrawlerRunConfig
 
-from mini_scraper.config_generator.feature_extractor import (
+from config_generator.feature_extractor import (
     LLMFeatureExtractor,
     extract_pagination_html,
 )
-from mini_scraper.config_generator.llm_client import LLMClient
-from mini_scraper.config_generator.pagination_examples import (
+from config_generator.llm_client import LLMClient
+from config_generator.pagination_examples import (
     format_dynamic_pagination_examples,
     format_static_pagination_examples,
 )
-from mini_scraper.config_generator.prompts import CONFIG_GENERATION_PROMPT
-from mini_scraper.config_generator.schemas import GeneratedConfig
-from mini_scraper.config_generator.utils import parse_json_response
-from mini_scraper.config_generator.vector_store import ConfigVectorStore
+from config_generator.prompts import CONFIG_GENERATION_PROMPT
+from config_generator.schemas import GeneratedConfig
+from config_generator.utils import parse_json_response
+from config_generator.vector_store import ConfigVectorStore
 
 logger = logging.getLogger(__name__)
 

@@ -1,20 +1,20 @@
-from mini_scraper.config_generator.feature_extractor import (
+from config_generator.feature_extractor import (
     LLMFeatureExtractor,
     extract_pagination_html,
 )
-from mini_scraper.config_generator.generator import ConfigGenerator
-from mini_scraper.config_generator.llm_client import LLMClient
-from mini_scraper.config_generator.pagination_examples import (
+from config_generator.generator import ConfigGenerator
+from config_generator.llm_client import LLMClient
+from config_generator.pagination_examples import (
     PAGINATION_EXAMPLES,
     format_dynamic_pagination_examples,
     format_static_pagination_examples,
 )
-from mini_scraper.config_generator.schemas import (
+from config_generator.schemas import (
     GeneratedConfig,
     LLMFeatures,
     SimilarConfig,
 )
-from mini_scraper.config_generator.vector_store import ConfigVectorStore
+from config_generator.vector_store import ConfigVectorStore
 
 __all__ = [
     "ConfigGenerator",
